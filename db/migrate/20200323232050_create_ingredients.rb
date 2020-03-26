@@ -5,5 +5,7 @@ class CreateIngredients < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+    add_index(:ingredients, :name, unique: true)
+    change_column_null(:ingredients, :name, false)
   end
 end

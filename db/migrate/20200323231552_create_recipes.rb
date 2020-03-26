@@ -6,5 +6,7 @@ class CreateRecipes < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+    add_index(:recipes, :name, unique: true)
+    change_column_null(:recipes, :name, false)
   end
 end
