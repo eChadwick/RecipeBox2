@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("white_marble_background.jpg");
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card {
+    background-color: white;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -17px;
+    opacity: 80%;
+    width: 80%;
+}
