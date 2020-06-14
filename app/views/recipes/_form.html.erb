@@ -12,13 +12,18 @@
   <% end %>
 
   <div class="field", id="new_recipe_name">
-    <%= form.label :name, "Recipe Name" %>
+    <h3>Recipe Name</h3>
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
-    <%= form.label :directions %>
-    <%= form.text_field :directions %>
+  <div class="field", id="new_recipe_ingredients">
+    <h3>Ingredients</h3>
+    <input type="text", name="ingredients[]">
+  </div>
+
+  <div class="field", id="new_recipe_directions">
+    <h3>Directions</h3>
+    <input type="text" name="directions[]">
   </div>
 
   <div class="actions">
